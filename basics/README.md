@@ -1,4 +1,14 @@
-## Basics
+# Python Foundations
 
-This folder contains basic Python programs covering
-input/output, conditions, loops, and functions.
+This repository documents my journey of learning Python,
+starting from core concepts and gradually moving towards
+problem-solving and real-world logic.
+
+## Current topics
+- Input & Output
+- Conditional statements
+- Loops
+- Basic programs
+
+## Goal
+To build a strong foundation in Python before college.
