@@ -1,0 +1,30 @@
+# Sales Analyzer for a Small Shop
+# Reads sales data from a file and generates summary
+
+from collections import defaultdict
+
+sales_file = "sales_data.txt"
+
+product_sales = defaultdict(int)
+total_sales = 0
+
+with open(sales_file, "r") as file:
+    for line in file:
+        product, amount = line.strip().split(",")
+        amount = int(amount)
+
+        product_sales[product] += amount
+        total_sales += amount
+
+print("\n---- SALES SUMMARY ----")
+
+print("Total Sales:", total_sales)
+
+best_product = max(product_sales, key=product_sales.get)
+
+print("Best Selling Product:", best_product)
+print("Revenue from", best_product, ":", product_sales[best_product])
+
+print("\nProduct-wise Sales:")
+for product, amount in product_sales.items():
+    print(product, ":", amount)
