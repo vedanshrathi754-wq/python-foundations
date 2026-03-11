@@ -1,0 +1,5 @@
+milk,30
+bread,20
+milk,25
+eggs,40
+bread,15
